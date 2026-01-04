@@ -34,28 +34,6 @@ Frontend: HTML, CSS
 
 Model Serialization: Pickle
 
-📂 Project Structure
-Employee-Salary-Prediction/
-│
-├── data/
-│   └── salary.csv
-│
-├── model/
-│   └── salary_model.pkl
-│
-├── notebook/
-│   └── salary_regression.ipynb
-│
-├── report/
-│   └── (optional analysis/report files)
-│
-├── templates/
-│   └── index.html
-│
-├── app.py
-├── requirements.txt
-└── README.md
-
 📊 Dataset Description
 
 File: salary.csv
@@ -108,8 +86,3 @@ Improve UI with Bootstrap
 Deploy on cloud (Heroku / Render / AWS)
 
 Add model evaluation metrics to UI
-
-⚠️ Disclaimer
-
-This project is for educational purposes only.
-Predictions may not reflect real-world salary standards.
