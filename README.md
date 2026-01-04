@@ -28,18 +28,24 @@ It covers the complete workflow from data loading to model prediction through a 
 🧮 Pandas, NumPy
 
 🎨 HTML
-
 📂 Project Structure
 Employee-Salary-Prediction/
 │
-├── data/               📁 Dataset used for training
-├── model/              🤖 Saved machine learning model
-├── notebook/           📓 Jupyter notebook for training
-├── templates/          🎨 HTML template
-├── app.py              🚀 Flask application
-├── requirements.txt    📦 Required Python libraries
-└── README.md           📝 Project documentation
-
+├── 📁 data/
+│   └── salary.csv              # Dataset used for training
+│
+├── 📁 model/
+│   └── salary_model.pkl        # Saved machine learning model
+│
+├── 📁 notebook/
+│   └── salary_regression.ipynb # Jupyter notebook for training
+│
+├── 📁 templates/
+│   └── index.html              # HTML template
+│
+├── 🚀 app.py                   # Flask application
+├── 📦 requirements.txt         # Required Python libraries
+└── 📝 README.md                # Project documentation
 ⚙️ How It Works
 
 👤 User enters years of experience
