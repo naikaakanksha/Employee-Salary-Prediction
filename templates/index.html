@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Salary Prediction using Machine Learning</title>
+
+    <style>
+        body {
+            background-color: #f4f6f8;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 700px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #555;
+            font-size: 15px;
+        }
+
+        hr {
+            margin: 25px 0;
+        }
+
+        h3 {
+            color: #007bff;
+        }
+
+        p {
+            color: #444;
+            line-height: 1.6;
+        }
+
+        ul {
+            margin-left: 20px;
+            color: #444;
+        }
+
+        input {
+            padding: 8px;
+            width: 60%;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 10px 25px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .result {
+            color: green;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Salary Prediction</h1>
+
+    <p class="subtitle">
+        A Machine Learning project using <b>Simple Linear Regression</b>
+        to predict employee salary based on years of experience.
+    </p>
+
+    <hr>
+
+    <h3>📌 Project Overview</h3>
+    <p>
+        This project demonstrates how Machine Learning regression techniques
+        can be used to analyze the relationship between work experience and salary.
+        The model is trained on historical data and deployed using Flask.
+    </p>
+
+    <h3>⚙️ Algorithm Used</h3>
+    <ul>
+        <li>Simple Linear Regression</li>
+        <li>Train-Test Split (80% Training, 20% Testing)</li>
+        <li>Evaluation using R² Score</li>
+    </ul>
+
+    <h3>📊 Dataset Information</h3>
+    <p>
+        <b>YearsExperience:</b> Independent variable<br>
+        <b>Salary:</b> Dependent variable
+    </p>
+
+    <hr>
+
+    <h3>🔢 Salary Prediction</h3>
+
+    <form method="POST">
+        <label>Enter Years of Experience:</label><br><br>
+        <input type="number" name="experience" step="0.1" required>
+        <br><br>
+        <button type="submit">Predict Salary</button>
+    </form>
+
+    {% if prediction %}
+        <div class="result">
+            Predicted Salary: ₹ {{ prediction | round(2) }}
+        </div>
+    {% endif %}
+
+    <hr>
+
+    <p class="footer">
+        Developed using Python, Scikit-learn & Flask
+    </p>
+
+</div>
+
+</body>
+</html>
