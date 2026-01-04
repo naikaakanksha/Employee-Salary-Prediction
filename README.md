@@ -1,71 +1,115 @@
 💼 Employee Salary Prediction Using Linear Regression
 
-A machine learning web application that predicts employee salary based on years of experience using Linear Regression, deployed with Flask.
+A machine learning web application that predicts employee salary based on experience using Linear Regression.
+The project demonstrates an end-to-end ML workflow — from data preprocessing and model training to deployment using Flask.
 
 📌 Project Overview
 
-This project demonstrates an end-to-end ML pipeline including data preprocessing, model training, saving the model, and integrating it into a web application.
+This project uses Linear Regression, one of the fundamental supervised learning algorithms, to predict employee salaries.
+It is designed for educational and portfolio purposes, showcasing how a simple ML model can be integrated into a web application.
 
 🚀 Features
 
-Salary prediction using Linear Regression
+📊 Salary prediction based on years of experience
 
-Flask-based web interface
+🧠 Linear Regression model trained using real data
 
-Pre-trained model using Pickle
+🌐 User-friendly web interface using Flask
 
-Clean and modular project structure
+💾 Pre-trained model saved with pickle
+
+📁 Clean and modular project structure
 
 🛠️ Tech Stack
 
-Python
+Programming Language: Python
 
-Scikit-learn
+Machine Learning: Scikit-learn
 
-Flask
+Web Framework: Flask
 
-Pandas, NumPy
+Data Handling: Pandas, NumPy
 
-HTML, CSS
+Frontend: HTML, CSS
+
+Model Serialization: Pickle
 
 📂 Project Structure
 Employee-Salary-Prediction/
+│
 ├── data/
 │   └── salary.csv
+│
 ├── model/
 │   └── salary_model.pkl
+│
 ├── notebook/
 │   └── salary_regression.ipynb
+│
 ├── report/
 │   └── (optional analysis/report files)
+│
 ├── templates/
 │   └── index.html
+│
 ├── app.py
 ├── requirements.txt
 └── README.md
 
-⚙️ Installation & Run
-pip install -r requirements.txt
-python app.py
+📊 Dataset Description
 
+File: salary.csv
 
-Open in browser:
+Features:
 
-http://127.0.0.1:5000/
+YearsExperience – Number of years of experience
 
-🧠 Model
+Salary – Annual salary (target variable)
+
+🧠 Model Description
 
 Algorithm: Linear Regression
 
-Input: Years of Experience
+Type: Supervised Learning
 
-Output: Predicted Salary
+Objective: Predict employee salary based on experience
+
+Model File: salary_model.pkl
+
+Then open your browser and visit:
+
+http://127.0.0.1:5000/
+
+🖥️ Web Application Flow
+
+User enters Years of Experience
+
+Flask sends input to the trained model
+
+Model predicts Salary
+
+Result is displayed on the web page
+🎯 Use Cases
+
+Beginner Machine Learning projects
+
+Academic mini-projects
+
+ML + Flask portfolio demonstration
+
+Interview-ready ML deployment example
+
+🔮 Future Enhancements
+
+Add multiple input features (education, role, location)
+
+Improve UI with Bootstrap
+
+Deploy on cloud (Heroku / Render / AWS)
+
+Add model evaluation metrics to UI
 
 ⚠️ Disclaimer
 
 This project is for educational purposes only.
-
-👩‍💻 Author
-
-Aakanksha Naiknaware
-Data Science & Machine Learning Enthusiast
+Predictions may not reflect real-world salary standards.
